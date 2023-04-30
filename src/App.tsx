@@ -9,6 +9,7 @@ import NotFound from "./pages/Error/Notfound";
 import Template from "./template";
 import Dashboard from "./pages/Dashboard";
 import Components from "./pages/Components";
+import SignIn from "./pages/SignIn";
 
 function App() {
   const { fetchTheme } = useActions();
@@ -34,6 +35,7 @@ function App() {
         </Route>
         {/* 404 page */}
         <Route path='*' element={<NotFound />} />
+        <Route path='/signin' element={<SignIn />} />
       </Routes>
     </ThemeProvider>
   );
